@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Nci>
+	<NCI_SQL>
+		alter table T_JFW_DATAMODEL add(MAP_CLS varchar2(200))
+	</NCI_SQL>
+	<NCI_SQL>
+		alter table T_JFW_FIELDINFO add(MAP_PROPNAME varchar2(64))
+	</NCI_SQL>	
+	<NCI_SQL>
+		alter table T_JFW_CODEMODEL add(MULTIVERSION number(4))
+	</NCI_SQL>	
+	<NCI_SQL>
+		alter table JFW_SECURITY_POLICY drop(ACTIONRIGHT)
+	</NCI_SQL>	
+	<NCI_SQL>
+		alter table JFW_SECURITY_POLICY add(appID number(64))
+	</NCI_SQL>	
+
+	<NCI_SQL>
+		alter table JFW_BASE_LINKDEFINE add(UUM_RIGHT_ID varchar2(64))
+	</NCI_SQL>	
+	<NCI_SQL>
+		alter table APP_TEMPLATE_ATTACHMENT add(status number(4))
+	</NCI_SQL>	
+	<NCI_SQL>
+		create table JFW_SECURITY_ACTION(SEQKEY VARCHAR2(64) not null primary key,MODULENAME  VARCHAR2(64),ROLEID VARCHAR2(64),ACTIONS VARCHAR2(100),CREATEID VARCHAR2(64),CREATEDATE  DATE,UPDATEID VARCHAR2(64),UPDATEDATE  DATE,USER_ORGID  VARCHAR2(64),USER_UNITID VARCHAR2(64))
+	</NCI_SQL>
+</Nci>

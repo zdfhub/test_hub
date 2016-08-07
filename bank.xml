@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<info>
+ <style>Excel</style>
+ <colunms>
+	  <column id='name'>name</column>
+	  <column id='bankno'>bankno</column>
+	  <column id='actualpay'>jine</column>
+ </colunms>
+ <columnsperator>$</columnsperator>
+ <recordsperator>\n</recordsperator>
+</info>

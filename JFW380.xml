@@ -1,0 +1,11 @@
+<?xml version=1.0 encoding=gb2312?>
+<Nci>
+	
+	<NCI_SQL>
+		alter table T_JFW_CODEMODEL add(icon varchar2(100),openicon varchar2(100),shortcuttype varchar2(64),shortcutnum number(4))
+	</NCI_SQL>	
+	
+	<NCI_SQL>
+		create table T_JFW_CODEMODEL_SHORTCUT(SEQKEY VARCHAR2(64) NOT NULL primary key, userID VARCHAR2(64), codeValue VARCHAR2(100), codeNAME VARCHAR2(500), clickNUM number(10), LATELYDATE DATE, MODELNAME VARCHAR2(64), LOCKED NUMBER(4))
+	</NCI_SQL>		
+</Nci>
